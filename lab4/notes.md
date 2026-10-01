@@ -36,3 +36,33 @@ Git printed a summary message showing the branch name (`main`), root-commit indi
 
 ### Question 8: What are the first seven characters of your commit called, and what are they for?
 They are called the commit hash(For example, mine is f100c75). They also provide a unique identifier for that specific commit/snapshot so you can reference, inspect, or revert to it in the history.
+
+
+
+### Question 9: You now have two commits. Without looking it up: what are the four steps of the loop you just did twice?
+Edit, Check status, Stage and Commit
+
+
+
+### Question 10: Why does this file get a special name and a special place, rather than being called notes.md like everything else?
+README.md sits in the root directory and has that specific name because code-hosting platforms like GitHub automatically look for it to render as the main front page / documentation when visitors land on my repository.
+
+
+
+### Question 11: What did gh auth login do that means you will not be asked for a password when you push?
+It securely stored an authentication token and configured Git's credential helper on my laptop so that my identity and permissions are authenticated automatically over HTTPS without requiring me to manually type a password or Personal Access Token for every push.
+
+
+
+### Question 12: Refresh the repository page on GitHub. What is showing on the front page, and why that file?
+README.md file contents are rendered on the front page because GitHub automatically scans the root directory of a repository for a README.md file to display as the default project overview.
+
+
+
+### Question 13: Run git log --oneline again. Did pushing change your local history in any way?
+No, pushing did not change my local history at all. Pushing simply copies my existing local commits and uploads them to the remote server on GitHub; it leaves my local commit hashes and history completely untouched.
+
+
+
+### Question 14: Your repository is private but your TAs can now read it. In your own words, what is the difference between a repository being private and a repository not existing on GitHub at all?
+A private repository exists securely on GitHub with all its history and code, but access is restricted exclusively to me and explicitly invited collaborators/TAs. If a repository does not exist on GitHub at all, no server holds a copy of it, meaning it is entirely unavailable online for anyone else to access, clone, or review.
